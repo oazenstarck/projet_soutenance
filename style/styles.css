@@ -1,0 +1,22 @@
+header {
+    background: antiquewhite;
+    color: black;
+}
+
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#teddy_header {
+    text-align: right;
+    vertical-align: top;
+    
+}
+
+#kylian_header {
+    text-align: right;
+}
+
+#serena_header {
+    text-align: right;
+}
