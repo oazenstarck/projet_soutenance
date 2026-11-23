@@ -66,3 +66,24 @@ a:hover {
     display: flex;
     margin-right: 1%;
 }
+
+#teddy_div {
+    margin: 5%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #00509d;
+    color: #fdc500;
+    font-size: 18px;
+    display: flex;
+}
+
+#teddy_picture {
+    width: 20%;
+    border-radius: 10px;
+
+}
+
+#teddy_text {
+    margin: 3%;
+    font-weight: 500;
+}
