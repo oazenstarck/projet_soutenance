@@ -110,3 +110,10 @@ a:hover {
     font-weight: 500;
 }
 
+div {
+    transition: transform 0.2s;
+}
+
+div:hover {
+    transform: scale(1.05)
+}
