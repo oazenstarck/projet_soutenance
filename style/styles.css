@@ -112,10 +112,10 @@ a:hover {
     font-weight: 500;
 }
 
-div {
+#teddy_div, #kylian_div, #serena_div {
     transition: transform 0.2s;
 }
 
-div:hover {
-    transform: scale(1.05)
+#teddy_div:hover, #kylian_div:hover, #serena_div:hover {
+    transform: scale(1.05);
 }
