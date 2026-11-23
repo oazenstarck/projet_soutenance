@@ -87,3 +87,26 @@ a:hover {
     margin: 3%;
     font-weight: 500;
 }
+
+#kylian_div {
+    flex-direction: row-reverse;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #00509d;
+    color: #fdc500;
+    font-size: 18px;
+    display: flex;
+}
+
+#kylian_picture {
+    width: 20%;
+    border-radius: 10px;
+
+}
+
+#kylian_text {
+    margin: 3%;
+    font-weight: 500;
+}
+
