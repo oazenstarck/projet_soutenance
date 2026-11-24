@@ -7,8 +7,6 @@ html {
 #o_title {
     color: #ffd500;
     text-align: center;
-    margin-right: 47;
-    justify-content: center;
 }
 
 #kylian_didier_picture {
@@ -21,6 +19,8 @@ html {
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 #bouton_retour {
@@ -40,4 +40,10 @@ header {
 
 #bouton_retour:hover {
     color: #A88D02;
+}
+
+#o_div1 {
+    position: absolute;
+    left: 0;
+    margin-left: 2%;    
 }
