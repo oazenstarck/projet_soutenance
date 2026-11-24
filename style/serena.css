@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1b4332 ;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* Coluna única verde ligada do topo ao fim da página */
+#conteneur {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color:#6b331d ;
+    border-left: 4px solid #ffffff;
+    border-right: 4px solid #ffffff;
+}
+
+/* Cabeçalho integrado ao bloco verde */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 45px;
+    border-bottom: 3px solid #ffffff;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+}
+
+.sous-titre {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Menu de navegação integrado ao mesmo bloco */
+nav {
+    padding: 15px 45px;
+    border-bottom: 3px solid #ffffff;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 26px;
+}
+
+/* Links */
+a:link,
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Corpo principal dentro da mesma coluna */
+main {
+    padding: 35px 45px;
+}
+
+section {
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.derniere-section {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+h2 {
+    margin: 0 0 16px 0;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    padding-left: 14px;
+    border-left: 4px solid #ffffff;
+}
+
+p {
+    margin: 0 0 14px 0;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+section ul {
+    margin: 12px 0 0 0;
+    padding-left: 22px;
+}
+
+section li {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Quadro de palmarès com linha dupla branca */
+.encadre {
+    border: 2px solid #ffffff;
+    outline: 1px solid #ffffff;
+    outline-offset: -6px;
+    padding: 22px 26px;
+    margin-top: 18px;
+}
+
+.encadre ul {
+    margin: 0;
+}
+
+/* Rodapé integrado na base da coluna */
+footer {
+    text-align: center;
+    padding: 24px 45px;
+    border-top: 3px solid #ffffff;
+    font-size: 15px;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: underline;
+}
