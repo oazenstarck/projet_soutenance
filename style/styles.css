@@ -122,13 +122,12 @@ a:hover {
 
 #teddy_footer, #kylian_footer, #serena_footer {
     text-align: center;
-    vertical-align: top;
-    display: flex;
-    margin-left: auto;
 }
 
-#footer {
+footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10%;
+    background-color: #00509d;
 }
