@@ -1,0 +1,17 @@
+html {
+    background-color: #00509d;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#o_title {
+    color: #ffd500;
+    text-align: center;
+}
+
+#kylian_didier_picture {
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+    margin: 3%;
+}
+
