@@ -1,6 +1,79 @@
-#teddy_rinner2 {
-    width : 10%;
-    height : 10%;
-    border-radius: 10px;
-    
+#teddy_riner2 {
+    width : 30%;
+    height : 30%;
+    border-radius: 50px;
+    margin-right: 5%;
+}
+
+html {
+    background-color: #002c6e;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#titre {
+    text-align: center;
+}
+
+#content_teddy {
+    display: flex;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+
+#palmares_titre {
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#palmares {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+}
+
+.medaille {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.medaille span {
+    font-size: 40px;
+}
+
+.medaille h2 {
+    font-size: 35px;
+    margin: 10px;
+}
+
+.medaille p {
+    color: #002c6e;
+    margin: 0;
+}
+
+.or {
+    border-bottom: 5px solid gold;
+}
+
+.argent {
+    border-bottom: 5px solid silver;
+}
+
+.bronze {
+    border-bottom: 5px solid #cd7f32;
 }
