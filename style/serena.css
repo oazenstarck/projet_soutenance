@@ -4,7 +4,7 @@
 
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1e6708;
+    background-color:#1d4d0e;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@ body {
 
 /* Barra superior de navegação entre páginas (Fanpages) */
 header {
-    background: #1d4d0e;
+    background: #1e6708;
     color: #fdc500;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@ header h4 {
 #title {
 
     font-size: 22px;
-    color: #ffffff;
+    color: #fdc500;
 }   
 
 #teddy_header {
@@ -74,7 +74,7 @@ header h4 {
 .serena-topo {
     order: -1;
     width: auto;
-    height: 20%;
+    height: 15%;
     display: block;
 }
 
@@ -98,7 +98,7 @@ nav ul {
 a:link,
 a:visited {
     color: #fdc500;
-    text-decoration: bold;
+    text-decoration:bold;
     font-weight: 600;
     font-size: 16px;
 }
@@ -128,11 +128,10 @@ section {
 main h2 {
     margin: 0 0 14px 0;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 700;
     padding-left: 14px;
-    border-left: 4px solid #ffffff;
-}
+    }
 
 p {
     margin: 0 0 12px 0;
@@ -211,17 +210,9 @@ strong {
 
 /* Rodapé integrado */
 footer {
-    text-align: center;
-    padding: 22px 45px;
-    font-size: 15px;
-}
-
-footer p {
-    margin: 0;
-    color: #ffffff;
-    font-size: 15px;
-}
-
-footer a {
-    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background-color: #1e6708;
 }
