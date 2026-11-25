@@ -73,7 +73,7 @@ a:hover {
     border-radius: 10px;
     background-color: #00509d;
     color: #fdc500;
-    font-size: 18px;
+    font-size: 100%;
     display: flex;
 }
 
@@ -81,7 +81,6 @@ a:hover {
     width: 20%;
     height: 20%;
     border-radius: 10px;
-
 }
 
 #teddy_text {
@@ -96,7 +95,7 @@ a:hover {
     border-radius: 10px;
     background-color: #00509d;
     color: #fdc500;
-    font-size: 18px;
+    font-size: 100%;
     display: flex;
 }
 
@@ -118,4 +117,16 @@ a:hover {
 
 #teddy_div:hover, #kylian_div:hover, #serena_div:hover {
     transform: scale(1.05);
+}
+
+#teddy_footer, #kylian_footer, #serena_footer {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background-color: #00509d;
 }
