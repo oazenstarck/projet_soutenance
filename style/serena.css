@@ -4,58 +4,81 @@
 
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #6b331d;
+    background-color: #1e6708;
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+   }
 
 body {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
-/* Coluna única verde ligada do topo ao fim da página */
-#conteneur {
+/* Barra superior de navegação entre páginas (Fanpages) */
+header {
+    background: #1d4d0e;
+    color: #fdc500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 3%;
+    margin: 0;
+    gap: 10%;
+
+}
+header h2,
+header h4 {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#title {
+
+    font-size: 22px;
+    color: #ffffff;
+}   
+
+#teddy_header {
+    margin-left: auto;
+}
+
+/* Coluna central ligada do topo ao fim da página */
+#titulo {
     max-width: 960px;
     margin: 0 auto;
-    background-color: #1b4332;
+    background-color: #6b331d;
     border-left: 4px solid #ffffff;
     border-right: 4px solid #ffffff;
 }
 
-/* Cabeçalho com título e imagem recortada próximos */
-header {
+/* Cabeçalho interno da Serena (imagem à esquerda + título) */
+#head {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 25px;
-    padding: 32px 45px;
-    border-bottom: 3px solid #ffffff;
+    padding: 30px 45px;
 }
 
-header h1 {
-    margin: 0;
+#titre {
+    margin: 10px;
     color: #ffffff;
-    font-size: 34px;
-    letter-spacing: 0.5px;
-}
-
-.sous-titre {
-    margin: 4px 0 0 0;
-    color: #ffffff;
-    font-size: 16px;
-    font-style: italic;
+    font-size: 40px;
+    letter-spacing: 9px;
 }
 
 .serena-topo {
-    height: 110px;
+    order: -1;
     width: auto;
+    height: 20%;
     display: block;
 }
 
-/* Menu de navegação integrado */
+/* Menu de navegação interno (se houver) */
 nav {
     padding: 15px 45px;
     border-bottom: 3px solid #ffffff;
@@ -74,15 +97,15 @@ nav ul {
 /* Links */
 a:link,
 a:visited {
-    color: #ffffff;
-    text-decoration: none;
+    color: #fdc500;
+    text-decoration: bold;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 a:hover {
-    color: #ffffff;
-    text-decoration: underline;
+    color: #fdc500;
+    text-decoration: bold;
 }
 
 /* Corpo principal */
@@ -93,7 +116,6 @@ main {
 section {
     padding-bottom: 26px;
     margin-bottom: 26px;
-    border-bottom: 1px solid #ffffff;
     overflow: auto;
 }
 
@@ -103,7 +125,7 @@ section {
     border-bottom: none;
 }
 
-h2 {
+main h2 {
     margin: 0 0 14px 0;
     color: #ffffff;
     font-size: 22px;
@@ -119,14 +141,12 @@ p {
 }
 
 section ul {
-    margin: 10px 0 0 0;
+    margin: 10px 0 15px 0;
     padding-left: 22px;
 }
 
 section li {
-    margin-bottom: 8px;
     font-size: 17px;
-    color: #ffffff;
 }
 
 strong {
@@ -134,9 +154,9 @@ strong {
     font-weight: 700;
 }
 
-/* Quadro de palmarès com linha dupla branca */
+/* Quadro de destaque com linha dupla branca */
 .encadre {
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     outline: 1px solid #ffffff;
     outline-offset: -6px;
     padding: 20px 24px;
@@ -147,30 +167,52 @@ strong {
     margin: 0;
 }
 
-/* Classes prontas para fotos e GIFs nas seções */
-.foto-destaque {
-    display: block;
-    width: 440px;
+/* Imagens e GIFs das seções */
+.photo-reine{
+    float: right;
+    width: 25%;
     max-width: 100%;
     height: auto;
-    margin: 18px auto;
-    border: 3px solid #ffffff;
+    margin: 12px 0 12px 22px;
+    display: block;
 }
 
-.foto-lateral {
-    float: right;
-    width: 230px;
+.raquete {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 12px 12px 12px 22px;
+}
+
+.polemique {
+    float: left;
+    width: 30%;
     max-width: 100%;
     height: auto;
-    margin: 0 0 15px 22px;
-    border: 3px solid #ffffff;
+    margin: 12px 22px 12px 0;
+    display: block;
+}
+
+.patrimoine {
+    float: left;
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    margin: 12px 22px 12px 0;
+    display: block;
+}
+.superbowl {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin: 12px 12px 12px 22px;
+    
 }
 
 /* Rodapé integrado */
 footer {
     text-align: center;
     padding: 22px 45px;
-    border-top: 3px solid #ffffff;
     font-size: 15px;
 }
 
@@ -182,28 +224,4 @@ footer p {
 
 footer a {
     text-decoration: underline;
-}
-.serena-topo {
-    float: left;
-    height: auto;   /* ajuster a la taille du titre */
-    width: 20%;     /* proportion sans deformer */
-    display: block;
-}
-.photo-reine {
-    float: right;
-    height: auto;   /* ajuster a la taille du titre */
-    width: 20%;     /* proportion sans deformer */
-    display: block;
-}
-.polemique {
-    float: left;
-    height: auto;   /* ajuster a la taille du titre */
-    width: 50%;     /* proportion sans deformer */
-    display: block;
-}
-.2012 {
-    float: right;
-    height: 300px;   /* ajuster a la taille du titre */
-    width: 20%;     /* proportion sans deformer */
-    display: block;
 }
