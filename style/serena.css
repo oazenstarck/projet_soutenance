@@ -4,7 +4,7 @@
 
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1b4332 ;
+    background-color: #6b331d;
     margin: 0;
     padding: 0;
 }
@@ -20,16 +20,17 @@ body {
 #conteneur {
     max-width: 960px;
     margin: 0 auto;
-    background-color:#6b331d ;
+    background-color: #1b4332;
     border-left: 4px solid #ffffff;
     border-right: 4px solid #ffffff;
 }
 
-/* Cabeçalho integrado ao bloco verde */
+/* Cabeçalho com título e imagem recortada próximos */
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 25px;
     padding: 32px 45px;
     border-bottom: 3px solid #ffffff;
 }
@@ -42,13 +43,19 @@ header h1 {
 }
 
 .sous-titre {
-    margin: 0;
+    margin: 4px 0 0 0;
     color: #ffffff;
     font-size: 16px;
     font-style: italic;
 }
 
-/* Menu de navegação integrado ao mesmo bloco */
+.serena-topo {
+    height: 110px;
+    width: auto;
+    display: block;
+}
+
+/* Menu de navegação integrado */
 nav {
     padding: 15px 45px;
     border-bottom: 3px solid #ffffff;
@@ -61,7 +68,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px 26px;
+    gap: 12px 24px;
 }
 
 /* Links */
@@ -78,15 +85,16 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Corpo principal dentro da mesma coluna */
+/* Corpo principal */
 main {
     padding: 35px 45px;
 }
 
 section {
-    padding-bottom: 28px;
-    margin-bottom: 28px;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
     border-bottom: 1px solid #ffffff;
+    overflow: auto;
 }
 
 .derniere-section {
@@ -96,27 +104,27 @@ section {
 }
 
 h2 {
-    margin: 0 0 16px 0;
+    margin: 0 0 14px 0;
     color: #ffffff;
-    font-size: 23px;
+    font-size: 22px;
     font-weight: 700;
     padding-left: 14px;
     border-left: 4px solid #ffffff;
 }
 
 p {
-    margin: 0 0 14px 0;
+    margin: 0 0 12px 0;
     font-size: 17px;
     color: #ffffff;
 }
 
 section ul {
-    margin: 12px 0 0 0;
+    margin: 10px 0 0 0;
     padding-left: 22px;
 }
 
 section li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 17px;
     color: #ffffff;
 }
@@ -131,18 +139,37 @@ strong {
     border: 2px solid #ffffff;
     outline: 1px solid #ffffff;
     outline-offset: -6px;
-    padding: 22px 26px;
-    margin-top: 18px;
+    padding: 20px 24px;
+    margin-top: 16px;
 }
 
 .encadre ul {
     margin: 0;
 }
 
-/* Rodapé integrado na base da coluna */
+/* Classes prontas para fotos e GIFs nas seções */
+.foto-destaque {
+    display: block;
+    width: 440px;
+    max-width: 100%;
+    height: auto;
+    margin: 18px auto;
+    border: 3px solid #ffffff;
+}
+
+.foto-lateral {
+    float: right;
+    width: 230px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 15px 22px;
+    border: 3px solid #ffffff;
+}
+
+/* Rodapé integrado */
 footer {
     text-align: center;
-    padding: 24px 45px;
+    padding: 22px 45px;
     border-top: 3px solid #ffffff;
     font-size: 15px;
 }
@@ -155,4 +182,28 @@ footer p {
 
 footer a {
     text-decoration: underline;
+}
+.serena-topo {
+    float: left;
+    height: auto;   /* ajuster a la taille du titre */
+    width: 20%;     /* proportion sans deformer */
+    display: block;
+}
+.photo-reine {
+    float: right;
+    height: auto;   /* ajuster a la taille du titre */
+    width: 20%;     /* proportion sans deformer */
+    display: block;
+}
+.polemique {
+    float: left;
+    height: auto;   /* ajuster a la taille du titre */
+    width: 50%;     /* proportion sans deformer */
+    display: block;
+}
+.2012 {
+    float: right;
+    height: 300px;   /* ajuster a la taille du titre */
+    width: 20%;     /* proportion sans deformer */
+    display: block;
 }
