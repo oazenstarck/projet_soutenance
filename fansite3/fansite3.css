@@ -55,9 +55,10 @@ h2 {
     margin-right: 1%;
 }
 
-/* Barra das subpáginas da Serena na linha de baixo, centralizada */
+/* Barra das subpáginas na linha de baixo, centralizada */
 #serena_pages_header,
 #serena_pages_footer {
+    flex-basis: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -114,8 +115,8 @@ a.active-page {
 
 .serena-topo {
     order: -1;
-    width: auto;
-    height: 10%;
+    width: 110px;
+    height: auto;
     display: block;
 }
 
@@ -187,17 +188,6 @@ strong {
     display: block;
 }
 
-/* Navegação entre as 3 páginas no fim do conteúdo */
-.pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 30px;
-    padding-top: 10px;
-}
-
 /* Footer */
 #teddy_footer,
 #kylian_footer,
@@ -259,11 +249,6 @@ footer {
         float: none;
         width: 80%;
         margin: 15px auto;
-    }
-
-    .pagination {
-        flex-direction: column;
-        text-align: center;
     }
 
     p,
