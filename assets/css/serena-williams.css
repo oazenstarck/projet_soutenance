@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#1d4d0e;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Barra superior de navegação entre páginas (Fanpages) */
+header {
+    background: #1e6708;
+    color: #fdc500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 3%;
+    margin: 0;
+    gap: 10%;
+
+}
+header h2,
+header h4 {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#title {
+
+    font-size: 22px;
+    color: #fdc500;
+}   
+
+#teddy_header {
+    margin-left: auto;
+}
+
+/* Coluna central ligada do topo ao fim da página */
+#titulo {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #6b331d;
+    border-left: 4px solid #ffffff;
+    border-right: 4px solid #ffffff;
+}
+
+/* Cabeçalho interno da Serena (imagem à esquerda + título) */
+#head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 30px 45px;
+}
+
+#titre {
+    margin: 10px;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 9px;
+}
+
+.serena-topo {
+    order: -1;
+    width: auto;
+    height: 15%;
+    display: block;
+}
+
+/* Menu de navegação interno (se houver) */
+nav {
+    padding: 15px 45px;
+    border-bottom: 3px solid #ffffff;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 24px;
+}
+
+/* Links */
+a:link,
+a:visited {
+    color: #fdc500;
+    text-decoration:bold;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #fdc500;
+    text-decoration: bold;
+}
+
+/* Corpo principal */
+main {
+    padding: 35px 45px;
+}
+
+section {
+    padding-bottom: 26px;
+    margin-bottom: 26px;
+    overflow: auto;
+}
+
+.derniere-section {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+main h2 {
+    margin: 0 0 14px 0;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    padding-left: 14px;
+    }
+
+p {
+    margin: 0 0 12px 0;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+section ul {
+    margin: 10px 0 15px 0;
+    padding-left: 22px;
+}
+
+section li {
+    font-size: 17px;
+}
+
+strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Quadro de destaque com linha dupla branca */
+.encadre {
+    border: 1px solid #ffffff;
+    outline: 1px solid #ffffff;
+    outline-offset: -6px;
+    padding: 20px 24px;
+    margin-top: 16px;
+}
+
+.encadre ul {
+    margin: 0;
+}
+
+/* Imagens e GIFs das seções */
+.photo-reine{
+    float: right;
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+    margin: 12px 0 12px 22px;
+    display: block;
+}
+
+.raquete {
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 12px 12px 12px 22px;
+}
+
+.polemique {
+    float: left;
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    margin: 12px 22px 12px 0;
+    display: block;
+}
+
+.patrimoine {
+    float: left;
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    margin: 12px 22px 12px 0;
+    display: block;
+}
+.superbowl {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin: 12px 12px 12px 22px;
+    
+}
+
+/* Rodapé integrado */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background-color: #1e6708;
+}
