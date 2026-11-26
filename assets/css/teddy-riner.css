@@ -1,79 +1,170 @@
-#teddy_riner2 {
-    width : 30%;
-    height : 30%;
-    border-radius: 50px;
-    margin-right: 5%;
-}
-
-html {
-    background-color: #002c6e;
+body {
+    margin: 0;
+    background-color: #eeeae2;
+    color: #222222;
     font-family: Arial, sans-serif;
 }
 
-p {
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 1.7;
-    margin-left: 70px;
-    margin-right: 70px;
+header {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-#titre {
+header h2,
+header h4 {
+    display: inline-block;
+    margin: 8px 18px;
+}
+
+header a,
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover,
+footer a:hover {
+    color: #d9636c;
+}
+
+.teddy_pages {
+    margin-top: 15px;
+}
+
+.teddy_pages h4 {
+    margin: 5px 15px;
+}
+
+.teddy_intro {
+    width: 80%;
+    margin: 45px auto;
     text-align: center;
 }
 
-#content_teddy {
-    display: flex;
+.teddy_picture {
+    width: 45%;
+    max-width: 480px;
+    height: auto;
+}
+
+.teddy_intro_text {
+    margin-top: 25px;
 }
 
 h1 {
-    color: #ffffff;
-}
-
-
-#palmares_titre {
-    color: white;
-    text-align: center;
-    margin-top: 70px;
-}
-
-#palmares {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 40px;
-}
-
-.medaille {
-    background-color: white;
-    width: 200px;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.medaille span {
-    font-size: 40px;
-}
-
-.medaille h2 {
-    font-size: 35px;
+    font-size: 42px;
     margin: 10px;
 }
 
-.medaille p {
-    color: #002c6e;
-    margin: 0;
+h2 {
+    font-size: 27px;
 }
 
-.or {
-    border-bottom: 5px solid gold;
+p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.argent {
-    border-bottom: 5px solid silver;
+.teddy_text_block {
+    width: 80%;
+    margin: 20px auto 55px auto;
 }
 
-.bronze {
-    border-bottom: 5px solid #cd7f32;
+.teddy_numbers {
+    display: flex;
+    width: 80%;
+    margin: 20px auto 60px auto;
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.teddy_numbers div {
+    width: 33%;
+    padding: 20px 10px;
+}
+
+.teddy_numbers span {
+    color: #a51f2c;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.teddy_numbers p {
+    margin: 8px;
+}
+
+.teddy_story {
+    width: 80%;
+    margin: 20px auto 60px auto;
+}
+
+.teddy_story div {
+    margin-bottom: 40px;
+}
+
+.teddy_story span {
+    color: #a51f2c;
+    font-weight: bold;
+}
+
+.teddy_story h2 {
+    margin: 8px 0;
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer h4 {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+footer p {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 650px) {
+    header h2,
+    header h4 {
+        display: block;
+    }
+
+    .teddy_intro,
+    .teddy_text_block,
+    .teddy_story,
+    .teddy_numbers {
+        width: 90%;
+    }
+
+    .teddy_picture {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .teddy_numbers {
+        display: block;
+    }
+
+    .teddy_numbers div {
+        width: auto;
+    }
+
+    footer h4 {
+        display: block;
+    }
 }
