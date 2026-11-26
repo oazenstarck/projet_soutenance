@@ -110,3 +110,30 @@ h2 {
     padding-left: 2%;
     padding-top: 0;
 }
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    #teddy_header,
+    #kylian_header,
+    #serena_header {
+        margin: 5px 0;
+    }
+
+    #kylian_content {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    #kylian_didier_picture {
+        width: 80%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

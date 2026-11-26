@@ -130,3 +130,36 @@ footer {
     gap: 10%;
     background-color: #00509d;
 }
+
+@media (max-width: 600px) {
+    header,
+    footer {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    #teddy_header,
+    #kylian_header,
+    #serena_header {
+        margin: 5px 0;
+    }
+
+    #teddy_div,
+    #kylian_div,
+    #serena_div {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    #teddy_picture,
+    #kylian_picture {
+        width: 100%;
+        height: auto;
+    }
+
+    #teddy_text,
+    #kylian_text {
+        margin: 10px 0;
+    }
+}
