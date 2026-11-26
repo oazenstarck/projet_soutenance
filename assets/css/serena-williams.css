@@ -4,11 +4,10 @@
 
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:#1d4d0e;
+    background-color: #1d4d0e;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-   }
+}
 
 body {
     margin: 0;
@@ -17,36 +16,68 @@ body {
     line-height: 1.6;
 }
 
-/* Barra superior de navegação entre páginas (Fanpages) */
+/* Header identique à la page principale, avec les couleurs du thème tennis */
 header {
     background: #1e6708;
     color: #fdc500;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 3%;
+    padding: 0.5%;
     margin: 0;
     gap: 10%;
-
 }
-header h2,
+
+header h2 {
+    margin: 0;
+    color: #fdc500;
+    padding-top: 1%;
+}
+
 header h4 {
     margin: 0;
-    padding: 0;
-    border: none;
 }
 
 #title {
+    padding-left: 2%;
+    padding-top: 0;
+}
 
-    font-size: 22px;
-    color: #fdc500;
-}   
+#title a {
+    font-size: inherit;
+}
 
 #teddy_header {
+    text-align: right;
+    vertical-align: top;
+    display: flex;
     margin-left: auto;
 }
 
-/* Coluna central ligada do topo ao fim da página */
+#kylian_header {
+    text-align: right;
+    display: flex;
+}
+
+#serena_header {
+    text-align: right;
+    display: flex;
+    margin-right: 1%;
+}
+
+/* Liens */
+a:link,
+a:visited {
+    color: #fdc500;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fdc500;
+    text-decoration: underline;
+}
+
+/* Colonne centrale liée du haut jusqu'en bas */
 #titulo {
     max-width: 960px;
     margin: 0 auto;
@@ -55,7 +86,7 @@ header h4 {
     border-right: 4px solid #ffffff;
 }
 
-/* Cabeçalho interno da Serena (imagem à esquerda + título) */
+/* En-tête interne de Serena (image à gauche + titre) */
 #head {
     display: flex;
     align-items: center;
@@ -74,11 +105,11 @@ header h4 {
 .serena-topo {
     order: -1;
     width: auto;
-    height: 15%;
+    height: 5%;
     display: block;
 }
 
-/* Menu de navegação interno (se houver) */
+/* Menu de navigation interne */
 nav {
     padding: 15px 45px;
     border-bottom: 3px solid #ffffff;
@@ -94,21 +125,7 @@ nav ul {
     gap: 12px 24px;
 }
 
-/* Links */
-a:link,
-a:visited {
-    color: #fdc500;
-    text-decoration:bold;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-a:hover {
-    color: #fdc500;
-    text-decoration: bold;
-}
-
-/* Corpo principal */
+/* Contenu principal */
 main {
     padding: 35px 45px;
 }
@@ -130,8 +147,7 @@ main h2 {
     color: #ffffff;
     font-size: 26px;
     font-weight: 700;
-    padding-left: 14px;
-    }
+}
 
 p {
     margin: 0 0 12px 0;
@@ -145,6 +161,7 @@ section ul {
 }
 
 section li {
+    margin-bottom: 8px;
     font-size: 17px;
 }
 
@@ -153,7 +170,7 @@ strong {
     font-weight: 700;
 }
 
-/* Quadro de destaque com linha dupla branca */
+/* Encadré avec double ligne blanche */
 .encadre {
     border: 1px solid #ffffff;
     outline: 1px solid #ffffff;
@@ -166,8 +183,8 @@ strong {
     margin: 0;
 }
 
-/* Imagens e GIFs das seções */
-.photo-reine{
+/* Images et GIFs des sections */
+.photo-reine {
     float: right;
     width: 25%;
     max-width: 100%;
@@ -179,8 +196,10 @@ strong {
 .raquete {
     float: left;
     width: 30%;
+    max-width: 100%;
     height: auto;
-    margin: 12px 12px 12px 22px;
+    margin: 12px 22px 12px 0;
+    display: block;
 }
 
 .polemique {
@@ -200,19 +219,76 @@ strong {
     margin: 12px 22px 12px 0;
     display: block;
 }
+
 .superbowl {
     float: right;
     width: 30%;
+    max-width: 100%;
     height: auto;
-    margin: 12px 12px 12px 22px;
-    
+    margin: 12px 0 12px 22px;
+    display: block;
 }
 
-/* Rodapé integrado */
+/* Footer identique à la page principale, avec les couleurs du thème tennis */
+#teddy_footer,
+#kylian_footer,
+#serena_footer,
+#insta_footer,
+#retour_footer {
+    text-align: center;
+}
+
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10%;
     background-color: #1e6708;
+    color: #fdc500;
+}
+
+/* Adaptation mobile */
+@media (max-width: 600px) {
+    header,
+    footer {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    #teddy_header,
+    #kylian_header,
+    #serena_header,
+    #teddy_footer,
+    #kylian_footer,
+    #serena_footer,
+    #insta_footer,
+    #retour_footer {
+        margin: 5px 0;
+    }
+
+    #head {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    #titre {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    main {
+        padding: 25px 20px;
+    }
+
+    .photo-reine,
+    .raquete,
+    .polemique,
+    .patrimoine,
+    .superbowl {
+        float: none;
+        width: 80%;
+        margin: 15px auto;
+    }
 }
