@@ -4,11 +4,10 @@
 
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:#1d4d0e;
+    background-color: #1d4d0e;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-   }
+}
 
 body {
     margin: 0;
@@ -19,16 +18,16 @@ body {
 
 /* Barra superior de navegação entre páginas (Fanpages) */
 header {
-    background: #1e6708;
+    background-color: #1e6708;
     color: #fdc500;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 14px 3%;
     margin: 0;
-    gap: 10%;
-
+    gap: 25px;
 }
+
 header h2,
 header h4 {
     margin: 0;
@@ -37,10 +36,9 @@ header h4 {
 }
 
 #title {
-
     font-size: 22px;
     color: #fdc500;
-}   
+}
 
 #teddy_header {
     margin-left: auto;
@@ -65,10 +63,10 @@ header h4 {
 }
 
 #titre {
-    margin: 10px;
+    margin: 0;
     color: #ffffff;
     font-size: 40px;
-    letter-spacing: 9px;
+    letter-spacing: 12 px;
 }
 
 .serena-topo {
@@ -78,34 +76,18 @@ header h4 {
     display: block;
 }
 
-/* Menu de navegação interno (se houver) */
-nav {
-    padding: 15px 45px;
-    border-bottom: 3px solid #ffffff;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 24px;
-}
-
 /* Links */
 a:link,
 a:visited {
     color: #fdc500;
-    text-decoration:bold;
+    text-decoration: bold;
     font-weight: 600;
     font-size: 16px;
 }
 
 a:hover {
-    color: #fdc500;
-    text-decoration: bold;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 /* Corpo principal */
@@ -127,11 +109,11 @@ section {
 
 main h2 {
     margin: 0 0 14px 0;
+    padding-left: 0;
     color: #ffffff;
     font-size: 26px;
     font-weight: 700;
-    padding-left: 14px;
-    }
+}
 
 p {
     margin: 0 0 12px 0;
@@ -145,6 +127,7 @@ section ul {
 }
 
 section li {
+    margin-bottom: 8px;
     font-size: 17px;
 }
 
@@ -153,7 +136,7 @@ strong {
     font-weight: 700;
 }
 
-/* Quadro de destaque com linha dupla branca */
+/* Effet terrain de tennis */
 .encadre {
     border: 1px solid #ffffff;
     outline: 1px solid #ffffff;
@@ -166,32 +149,19 @@ strong {
     margin: 0;
 }
 
-/* Imagens e GIFs das seções */
-.photo-reine{
+/* Images et GIFs */
+.photo-reine,
+.superbowl {
     float: right;
-    width: 25%;
+    width: 28%;
     max-width: 100%;
     height: auto;
     margin: 12px 0 12px 22px;
     display: block;
 }
 
-.raquete {
-    float: left;
-    width: 30%;
-    height: auto;
-    margin: 12px 12px 12px 22px;
-}
-
-.polemique {
-    float: left;
-    width: 30%;
-    max-width: 100%;
-    height: auto;
-    margin: 12px 22px 12px 0;
-    display: block;
-}
-
+.raquete,
+.polemique,
 .patrimoine {
     float: left;
     width: 30%;
@@ -200,19 +170,73 @@ strong {
     margin: 12px 22px 12px 0;
     display: block;
 }
-.superbowl {
-    float: right;
-    width: 30%;
-    height: auto;
-    margin: 12px 12px 12px 22px;
+
+/* Partie footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px 30px;
+    padding: 22px 5%;
+    background-color: #1e6708;
     
 }
 
-/* Rodapé integrado */
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10%;
-    background-color: #1e6708;
+footer h4,
+footer p {
+    margin: 0;
+}
+
+.bouton-insta {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 2px solid #fdc500;
+    border-radius: 6px;
+}
+
+.bouton-insta:hover {
+    background-color: #fdc500;
+    color: #1d4d0e;
+    text-decoration: none;
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    #teddy_header {
+        margin-left: 0;
+    }
+
+    #head {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    #titre {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    main {
+        padding: 25px 20px;
+    }
+
+    /* Pour que les images ne soient pas écrasées sur mobile */
+    .photo-reine,
+    .raquete,
+    .polemique,
+    .patrimoine,
+    .superbowl {
+        float: none;
+        width: 80%;
+        margin: 15px auto;
+    }
 }
