@@ -111,8 +111,21 @@ h2 {
     padding-top: 0;
 }
 
+#teddy_footer, #kylian_footer, #serena_footer {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background-color: #00509d;
+}
+
 @media (max-width: 600px) {
-    header {
+    header,
+    footer {
         flex-direction: column;
         gap: 5px;
         padding: 10px;
