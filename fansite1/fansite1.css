@@ -8,14 +8,20 @@ body {
 header {
     background-color: #222222;
     color: white;
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
 }
 
 header h2,
 header h4 {
-    display: inline-block;
-    margin: 8px 18px;
+    margin: 15px 2%;
+}
+
+#title {
+    margin-right: auto;
 }
 
 header a,
@@ -30,11 +36,14 @@ footer a:hover {
 }
 
 .teddy_pages {
-    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .teddy_pages h4 {
-    margin: 5px 15px;
+    margin: 8px 0;
 }
 
 .teddy_intro {
@@ -175,9 +184,22 @@ footer p {
 }
 
 @media screen and (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+
     header h2,
-    header h4 {
-        display: block;
+    header h4,
+    #title {
+        margin: 5px 0;
+    }
+
+    .teddy_pages {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
     }
 
     .teddy_intro,

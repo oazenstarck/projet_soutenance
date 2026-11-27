@@ -15,10 +15,20 @@ body {
 
 #kylian_picture,
 #kylian_didier_picture {
-    width: 25%;
-    max-width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 2px;
+}
+
+.kylian_photo {
+    width: 25%;
+    max-width: 300px;
+    text-align: center;
+}
+
+#kylian_france > #kylian_didier_picture {
+    width: 25%;
+    max-width: 300px;
 }
 
 #bouton_retour {
@@ -225,8 +235,11 @@ footer {
         margin: 20px;
     }
 
-    #kylian_picture,
-    #kylian_didier_picture {
+    .kylian_photo {
+        width: 80%;
+    }
+
+    #kylian_france > #kylian_didier_picture {
         width: 80%;
     }
 
