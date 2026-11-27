@@ -3,140 +3,152 @@
 }
 
 html {
+    background-color: #692208;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:#1d4d0e;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
+}
 
 body {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    line-height: 1.6;
 }
 
-/* Barra superior de navegação entre páginas (Fanpages) */
+/* Header */
 header {
-    background: #1e6708;
-    color: #fdc500;
+    background: #004220;
+    color: black;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 3%;
+    padding: 0;
     margin: 0;
     gap: 10%;
-
 }
-header h2,
-header h4 {
+
+h2 {
     margin: 0;
-    padding: 0;
-    border: none;
+    color: #fdc500;
+    padding-top: 1%;
 }
 
 #title {
-
-    font-size: 22px;
-    color: #fdc500;
-}   
+    padding-left: 2%;
+    padding-top: 0;
+}
 
 #teddy_header {
+    text-align: right;
+    vertical-align: top;
+    display: flex;
     margin-left: auto;
 }
 
-/* Coluna central ligada do topo ao fim da página */
+#kylian_header {
+    text-align: right;
+    display: flex;
+}
+
+#serena_header {
+    text-align: right;
+    display: flex;
+    margin-right: 1%;
+}
+
+/* Barra das subpáginas na linha de baixo, centralizada */
+#serena_pages_header,
+#serena_pages_footer {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#serena_pages_header {
+    background-color: #003718;
+}
+
+#serena_pages_header h4,
+#serena_pages_footer h4 {
+    margin: 8px 0;
+}
+
+/* Links */
+a:link {
+    color: #fdc500;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fdc500;
+}
+
+a:hover {
+    color: #A88D02;
+}
+
+a.active-page {
+    text-decoration: underline;
+}
+
+/* Área centralizada sem colunas verdes e sem linhas brancas */
 #titulo {
     max-width: 960px;
     margin: 0 auto;
-    background-color: #6b331d;
-    border-left: 4px solid #ffffff;
-    border-right: 4px solid #ffffff;
 }
 
-/* Cabeçalho interno da Serena (imagem à esquerda + título) */
 #head {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 25px;
-    padding: 30px 45px;
+    padding: 30px 45px 10px 45px;
 }
 
 #titre {
     margin: 10px;
     color: #ffffff;
     font-size: 40px;
-    letter-spacing: 9px;
+    letter-spacing: 6px;
 }
 
 .serena-topo {
     order: -1;
-    width: auto;
-    height: 15%;
+    width: 110px;
+    height: auto;
     display: block;
 }
 
-/* Menu de navegação interno (se houver) */
-nav {
-    padding: 15px 45px;
-    border-bottom: 3px solid #ffffff;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 24px;
-}
-
-/* Links */
-a:link,
-a:visited {
-    color: #fdc500;
-    text-decoration:bold;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-a:hover {
-    color: #fdc500;
-    text-decoration: bold;
-}
-
-/* Corpo principal */
+/* Conteúdo principal */
 main {
-    padding: 35px 45px;
+    padding: 25px 45px 35px 45px;
 }
 
 section {
-    padding-bottom: 26px;
-    margin-bottom: 26px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     overflow: auto;
 }
 
 .derniere-section {
     padding-bottom: 0;
     margin-bottom: 0;
-    border-bottom: none;
 }
 
 main h2 {
     margin: 0 0 14px 0;
+    padding-top: 0;
     color: #ffffff;
     font-size: 26px;
     font-weight: 700;
-    padding-left: 14px;
-    }
+}
 
 p {
-    margin: 0 0 12px 0;
-    font-size: 17px;
     color: #ffffff;
+    font-size: larger;
+    line-height: 1.5;
+    margin: 0 0 12px 0;
 }
 
 section ul {
@@ -145,7 +157,9 @@ section ul {
 }
 
 section li {
-    font-size: 17px;
+    margin-bottom: 8px;
+    font-size: larger;
+    line-height: 1.5;
 }
 
 strong {
@@ -153,45 +167,18 @@ strong {
     font-weight: 700;
 }
 
-/* Quadro de destaque com linha dupla branca */
-.encadre {
-    border: 1px solid #ffffff;
-    outline: 1px solid #ffffff;
-    outline-offset: -6px;
-    padding: 20px 24px;
-    margin-top: 16px;
-}
-
-.encadre ul {
-    margin: 0;
-}
-
-/* Imagens e GIFs das seções */
-.photo-reine{
+/* Imagens e GIFs */
+.photo-reine,
+.superbowl {
     float: right;
-    width: 25%;
+    width: 28%;
     max-width: 100%;
     height: auto;
     margin: 12px 0 12px 22px;
     display: block;
 }
 
-.raquete {
-    float: left;
-    width: 30%;
-    height: auto;
-    margin: 12px 12px 12px 22px;
-}
-
-.polemique {
-    float: left;
-    width: 30%;
-    max-width: 100%;
-    height: auto;
-    margin: 12px 22px 12px 0;
-    display: block;
-}
-
+.raquete,
 .patrimoine {
     float: left;
     width: 30%;
@@ -200,19 +187,72 @@ strong {
     margin: 12px 22px 12px 0;
     display: block;
 }
-.superbowl {
-    float: right;
-    width: 30%;
-    height: auto;
-    margin: 12px 12px 12px 22px;
-    
+
+/* Footer */
+#teddy_footer,
+#kylian_footer,
+#serena_footer,
+#insta_footer {
+    text-align: center;
 }
 
-/* Rodapé integrado */
 footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 10%;
-    background-color: #1e6708;
+    background-color: #004220;
+}
+
+/* Adaptação mobile */
+@media (max-width: 600px) {
+    header,
+    footer {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    #teddy_header,
+    #kylian_header,
+    #serena_header {
+        margin: 5px 0;
+    }
+
+    #serena_pages_header,
+    #serena_pages_footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    #head {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px 10px 20px;
+    }
+
+    #titre {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .photo-reine,
+    .raquete,
+    .patrimoine,
+    .superbowl {
+        float: none;
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    p,
+    section li {
+        font-size: 16px;
+    }
 }
