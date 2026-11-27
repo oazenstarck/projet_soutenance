@@ -114,9 +114,9 @@ a.active-page {
 }
 
 .serena-topo {
-    order: -1;
-    width: 110px;
-    height: auto;
+    float: left;
+    width: auto;
+    height: 10%;
     display: block;
 }
 
